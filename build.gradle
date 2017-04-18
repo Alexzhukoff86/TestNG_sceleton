@@ -1,0 +1,25 @@
+group 'fucking.test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.testng', name: 'testng', version: '6.11'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.3.1'
+}
+
+task FireFoxTest(type: Test) {
+    systemProperty "driver", "FireFox"
+    useTestNG() {
+        suites "src\\test\\resources\\testng-suite.xml"
+    }
+}
+
+
