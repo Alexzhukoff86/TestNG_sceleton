@@ -21,5 +21,11 @@ task FireFoxTest(type: Test) {
         suites "src\\test\\resources\\testng-suite.xml"
     }
 }
+task Chrome(type: Test) {
+    systemProperty "driver", "Chrome"
+    useTestNG() {
+        suites "src\\test\\resources\\testng-suite.xml"
+    }
+}
 
 
