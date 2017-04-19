@@ -1,35 +1,41 @@
 package Tests;
 
 import Factory.DriverFactory;
-import Methods.Trash;
+import Methods.LoginPageMethods;
+import Methods.MainPageMethods;
+import Pages.LoginPage;
+import Pages.MainPage;
+import Steps.LoginStep;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by zhukov on 4/18/2017.
  */
-public class LoginTest {
-   // DriverFactory driverFactory = new DriverFactory();
-   public WebDriver webDriver;
+public class LoginTest extends BaseTest {
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() throws Exception {
-        webDriver = DriverFactory.getDriver();
-        webDriver.get("https://web2.0calc.com/");
+        //loginPage = new LoginPage(webDriver);
+        loginPageMethods = new LoginPageMethods(new LoginPage(webDriver));
+        //mainPage = new MainPage(webDriver);
+        mainPageMethods = new MainPageMethods(new MainPage(webDriver));
+        loginStep = new LoginStep(mainPageMethods,loginPageMethods);
+
     }
 
-    @Test
+    @Test(description ="Test for login")
     public void testLogin() throws Exception {
-        Trash.Testing();
+        loginStep.login();
+
         Assert.assertEquals("sdfsfs", "sfsfs");
     }
 
-    @AfterMethod
+    @AfterClass
     public void tearDown() throws Exception {
-        webDriver.quit();
+        System.out.println("Error");
     }
 }

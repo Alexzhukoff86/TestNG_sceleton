@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="Tests.LoginTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2017-04-18T16:23:18" hostname="zhukov" time="0.005">
   <properties/>
   <testcase name="testLogin" classname="Tests.LoginTest" time="0.005">
+=======
+<testsuite name="Tests.LoginTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2017-04-19T09:36:30" hostname="zhukov" time="0.415">
+  <properties/>
+  <testcase name="testLogin" classname="Tests.LoginTest" time="0.415">
+>>>>>>> development
     <failure message="java.lang.AssertionError: expected [sfsfs] but found [sdfsfs]" type="java.lang.AssertionError">java.lang.AssertionError: expected [sfsfs] but found [sdfsfs]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
@@ -9,7 +15,11 @@
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
+<<<<<<< HEAD
 	at Tests.LoginTest.testLogin(LoginTest.java:28)
+=======
+	at Tests.LoginTest.testLogin(LoginTest.java:33)
+>>>>>>> development
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -43,7 +53,11 @@
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+<<<<<<< HEAD
 	at com.sun.proxy.$Proxy3.stop(Unknown Source)
+=======
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+>>>>>>> development
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -59,7 +73,14 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
+<<<<<<< HEAD
   <system-out><![CDATA[Trash test null
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
+=======
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[JavaScript error: http://qa.jtalks.org/antarcticle/javascripts/Global.js, line 35: ReferenceError: Cannot is not defined
+JavaScript error: http://qa.jtalks.org/antarcticle/javascripts/Global.js, line 35: ReferenceError: Cannot is not defined
+]]></system-err>
+>>>>>>> development
 </testsuite>
