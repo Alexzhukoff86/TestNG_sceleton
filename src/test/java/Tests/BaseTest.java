@@ -2,7 +2,10 @@ package Tests;
 
 import Factory.DriverFactory;
 import Methods.LoginPageMethods;
+import Methods.MainPageMethods;
 import Pages.LoginPage;
+import Pages.MainPage;
+import Steps.LoginStep;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -22,8 +25,11 @@ public class BaseTest {
     final public String USERNAME="alex.testQA";
     final public String PASSWORD="Password1";
 
-    LoginPage loginPage ;
-    LoginPageMethods loginPageMethods ;
+    public LoginPage loginPage ;
+    public LoginPageMethods loginPageMethods ;
+    public MainPage mainPage;
+    public MainPageMethods mainPageMethods;
+    public LoginStep loginStep;
 
 
     @BeforeSuite

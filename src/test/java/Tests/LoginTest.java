@@ -2,7 +2,10 @@ package Tests;
 
 import Factory.DriverFactory;
 import Methods.LoginPageMethods;
+import Methods.MainPageMethods;
 import Pages.LoginPage;
+import Pages.MainPage;
+import Steps.LoginStep;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -16,13 +19,18 @@ public class LoginTest extends BaseTest {
 
     @BeforeClass
     public void setUp() throws Exception {
-        loginPage = new LoginPage(webDriver);
-        loginPageMethods = new LoginPageMethods(loginPage);
+        //loginPage = new LoginPage(webDriver);
+        loginPageMethods = new LoginPageMethods(new LoginPage(webDriver));
+        //mainPage = new MainPage(webDriver);
+        mainPageMethods = new MainPageMethods(new MainPage(webDriver));
+        loginStep = new LoginStep(mainPageMethods,loginPageMethods);
+
     }
 
-    @Test
+    @Test(description ="Test for login")
     public void testLogin() throws Exception {
-        loginPageMethods.login_to_site(USERNAME,PASSWORD);
+        loginStep.login();
+
         Assert.assertEquals("sdfsfs", "sfsfs");
     }
 
