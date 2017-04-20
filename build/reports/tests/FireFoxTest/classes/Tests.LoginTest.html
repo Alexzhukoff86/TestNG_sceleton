@@ -41,11 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<<<<<<< HEAD
-<div class="counter">0.005s</div>
-=======
-<div class="counter">0.415s</div>
->>>>>>> development
+<div class="counter">1.560s</div>
 <p>duration</p>
 </div>
 </td>
@@ -71,11 +67,7 @@
 <a href="#tab1">Tests</a>
 </li>
 <li>
-<<<<<<< HEAD
-<a href="#tab2">Standard output</a>
-=======
 <a href="#tab2">Standard error</a>
->>>>>>> development
 </li>
 </ul>
 <div id="tab0" class="tab">
@@ -84,18 +76,32 @@
 <a name="testLogin"></a>
 <h3 class="failures">testLogin</h3>
 <span class="code">
-<pre>java.lang.AssertionError: expected [sfsfs] but found [sdfsfs]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-<<<<<<< HEAD
-	at Tests.LoginTest.testLogin(LoginTest.java:28)
-=======
-	at Tests.LoginTest.testLogin(LoginTest.java:33)
->>>>>>> development
+<pre>org.openqa.selenium.InvalidArgumentException: Expected [object Undefined] undefined to be a string
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'ZHUKOV', ip: '10.10.10.27', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\zhukov\AppData\Local\Temp\rust_mozprofile.pabFLor89TOp, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=53.0, platformVersion=6.3, moz:processID=15004, browserName=firefox, platformName=windows_nt}]
+Session ID: b6dc9a27-7267-40a0-a810-d164fe40eb31
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:43)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at Pages.LoginPage.login_to_site(LoginPage.java:35)
+	at Tests.LoginTest.testLogin(LoginTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,11 +135,7 @@
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-<<<<<<< HEAD
-	at com.sun.proxy.$Proxy3.stop(Unknown Source)
-=======
 	at com.sun.proxy.$Proxy2.stop(Unknown Source)
->>>>>>> development
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -163,26 +165,17 @@
 </thead>
 <tr>
 <td class="failures">testLogin</td>
-<<<<<<< HEAD
-<td>0.005s</td>
-=======
-<td>0.415s</td>
->>>>>>> development
+<td>1.560s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
 </div>
 <div id="tab2" class="tab">
-<<<<<<< HEAD
-<h2>Standard output</h2>
-<span class="code">
-<pre>Trash test null
-=======
 <h2>Standard error</h2>
 <span class="code">
-<pre>JavaScript error: http://qa.jtalks.org/antarcticle/javascripts/Global.js, line 35: ReferenceError: Cannot is not defined
+<pre>JavaScript warning: http://qa.jtalks.org/antarcticle/webjars/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 JavaScript error: http://qa.jtalks.org/antarcticle/javascripts/Global.js, line 35: ReferenceError: Cannot is not defined
->>>>>>> development
+JavaScript error: http://qa.jtalks.org/antarcticle/javascripts/Global.js, line 35: ReferenceError: Cannot is not defined
 </pre>
 </span>
 </div>
@@ -194,11 +187,7 @@ JavaScript error: http://qa.jtalks.org/antarcticle/javascripts/Global.js, line 3
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<<<<<<< HEAD
-<a href="http://www.gradle.org">Gradle 3.3</a> at Apr 18, 2017 7:23:20 PM</p>
-=======
-<a href="http://www.gradle.org">Gradle 3.1</a> at Apr 19, 2017 12:36:31 PM</p>
->>>>>>> development
+<a href="http://www.gradle.org">Gradle 3.1</a> at Apr 20, 2017 4:49:04 PM</p>
 </div>
 </div>
 </body>
