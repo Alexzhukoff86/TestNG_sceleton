@@ -8,7 +8,6 @@
             <!--class name="Test.IUaTest" /-->
             <!--class name="Test.LogoutTest"/-->
             <class name="Tests.LoginTest"/>
-
         </classes>
     </test>
 

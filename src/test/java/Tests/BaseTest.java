@@ -15,17 +15,8 @@ import java.util.concurrent.TimeUnit;
  * Created by Administrator on 4/18/2017.
  */
 public class BaseTest {
-
     public WebDriver webDriver;
-
-    final public String USERNAME = "alex.testQA";
-    final public String PASSWORD = "Password1";
-
     public BasePage basePage;
-    public LoginPage loginPage;
-    public MainPage mainPage;
-    public LoggedMainPage loggedMainPage;
-
 
     @BeforeSuite
     public void setBeforeSuite() throws Exception {

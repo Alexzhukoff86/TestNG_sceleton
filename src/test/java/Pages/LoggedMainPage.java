@@ -9,17 +9,18 @@ import org.openqa.selenium.support.FindBy;
  */
 public class LoggedMainPage extends BasePage {
     public LoggedMainPage(WebDriver webDriver) {
-                super(webDriver);
+        super(webDriver);
     }
-//Main Page when user is logged in
-	@FindBy(xpath = ".//*[@class='dropdown-toggle' and @href='#']")
-	public WebElement dropdown_menu_user;
+
+    //Main Page when user is logged in
+    @FindBy(xpath = ".//*[@class='dropdown-toggle' and @href='#']")
+    public WebElement dropdown_menu_user;
 
 
     //Main Page when user is logged in Methods
 
     //methods used in Assert for checkin of username on page in drop-down menu
-    public String check_name (){
+    public String check_name() {
         String username = dropdown_menu_user.getText();
         return username;
     }
