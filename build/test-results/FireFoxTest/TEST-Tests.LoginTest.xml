@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests.LoginTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2017-04-20T13:49:01" hostname="zhukov" time="1.56">
+<testsuite name="Tests.LoginTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2017-04-21T07:11:00" hostname="zhukov" time="1.931">
   <properties/>
-  <testcase name="testLogin" classname="Tests.LoginTest" time="1.56">
-    <failure message="org.openqa.selenium.InvalidArgumentException: Expected [object Undefined] undefined to be a string&#10;Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'&#10;System info: host: 'ZHUKOV', ip: '10.10.10.27', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{moz:profile=C:\Users\zhukov\AppData\Local\Temp\rust_mozprofile.pabFLor89TOp, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=53.0, platformVersion=6.3, moz:processID=15004, browserName=firefox, platformName=windows_nt}]&#10;Session ID: b6dc9a27-7267-40a0-a810-d164fe40eb31" type="org.openqa.selenium.InvalidArgumentException">org.openqa.selenium.InvalidArgumentException: Expected [object Undefined] undefined to be a string
+  <testcase name="testLogin" classname="Tests.LoginTest" time="1.931">
+    <failure message="org.openqa.selenium.InvalidArgumentException: Expected [object Undefined] undefined to be a string&#10;Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'&#10;System info: host: 'ZHUKOV', ip: '10.10.10.27', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{moz:profile=C:\Users\zhukov\AppData\Local\Temp\rust_mozprofile.rV0m8IMyioIA, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=53.0, platformVersion=6.3, moz:processID=3956, browserName=firefox, platformName=windows_nt}]&#10;Session ID: ded385fa-d9dc-44ae-a654-02bc0269237f" type="org.openqa.selenium.InvalidArgumentException">org.openqa.selenium.InvalidArgumentException: Expected [object Undefined] undefined to be a string
 Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
 System info: host: 'ZHUKOV', ip: '10.10.10.27', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\zhukov\AppData\Local\Temp\rust_mozprofile.pabFLor89TOp, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=53.0, platformVersion=6.3, moz:processID=15004, browserName=firefox, platformName=windows_nt}]
-Session ID: b6dc9a27-7267-40a0-a810-d164fe40eb31
+Capabilities [{moz:profile=C:\Users\zhukov\AppData\Local\Temp\rust_mozprofile.rV0m8IMyioIA, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=53.0, platformVersion=6.3, moz:processID=3956, browserName=firefox, platformName=windows_nt}]
+Session ID: ded385fa-d9dc-44ae-a654-02bc0269237f
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -27,7 +27,8 @@ Session ID: b6dc9a27-7267-40a0-a810-d164fe40eb31
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
 	at Pages.LoginPage.login_to_site(LoginPage.java:35)
-	at Tests.LoginTest.testLogin(LoginTest.java:38)
+	at Steps.TestLoginStep.LoginStep(TestLoginStep.java:28)
+	at Tests.LoginTest.testLogin(LoginTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
