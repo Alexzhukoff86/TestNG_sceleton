@@ -1,9 +1,17 @@
 package Steps;
 
-import Tests.BaseTest;
+import Pages.LoggedMainPage;
+import Pages.LoginPage;
+import Pages.MainPage;
 
 /**
- * Created by Administrator on 4/18/2017.
+ * Created by zhukov on 4/21/2017.
  */
-public class BaseStep extends BaseTest {
+public abstract class BaseStep {
+
+    final public String USERNAME = "alex.testQA";
+    final public String PASSWORD = "Password1";
+    public LoginPage loginPage;
+    public MainPage mainPage;
+    public LoggedMainPage loggedMainPage;
 }

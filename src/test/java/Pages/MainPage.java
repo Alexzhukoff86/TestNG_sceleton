@@ -8,13 +8,27 @@ import org.openqa.selenium.support.FindBy;
  * Created by Administrator on 4/18/2017.
  */
 public class MainPage extends BasePage {
+
     public MainPage(WebDriver webDriver) {
         super(webDriver);
     }
 
-	@FindBy(xpath = ".//*[@href='/antarcticle/signin']")
-	public WebElement SignIn_button;
+    // Main Page Elements
+
+    //Sign in button
+    @FindBy(xpath = ".//*[@href='/antarcticle/signin']")
+    public WebElement SignIn_button;
 
 
 
+    //Main Page methods
+
+    //Click "Sign in" button on main page
+    public LoginPage clickSignInButton() {
+        SignIn_button.click();
+        return new LoginPage(webDriver);
+    }
+
+
+//end of class
 }
