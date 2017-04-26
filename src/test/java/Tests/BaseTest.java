@@ -1,10 +1,7 @@
 package Tests;
 
 import Factory.DriverFactory;
-import Pages.BasePage;
-import Pages.LoggedMainPage;
-import Pages.LoginPage;
-import Pages.MainPage;
+import Pages.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -16,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class BaseTest {
     public WebDriver webDriver;
-    public BasePage basePage;
+    InitialPage initialPage;
 
     @BeforeSuite
     public void setBeforeSuite() throws Exception {

@@ -1,10 +1,6 @@
 package Steps;
 
-import Pages.BasePage;
-import Pages.LoggedMainPage;
-import Pages.LoginPage;
-import Pages.MainPage;
-import org.openqa.selenium.WebDriver;
+import Pages.*;
 
 /**
  * Created by zhukov on 4/20/2017.
@@ -12,23 +8,19 @@ import org.openqa.selenium.WebDriver;
 public class LoginSteps extends BaseStep {
 
     //Login method
-    public void LoginStep(BasePage basePage) {
-        mainPage = basePage.openMainPage();
+    public void loginToSite(InitialPage initialPage) {
+        mainPage = initialPage.openMainPage();
         loginPage = mainPage.clickSignInButton();
         loggedMainPage = loginPage.login_to_site(USERNAME, PASSWORD);
     }
 
     //
-    public String UserNameForAssert(){
-        String username = loggedMainPage.check_name();
-        return username;
+    public String getUserNameForAssert() {
+        return loggedMainPage.get_usrename_from_dropmenu();
     }
 
     public void logoutFromSiteStep() {
         loggedMainPage.logoutFromSite();
     }
-
-
-
 
 }

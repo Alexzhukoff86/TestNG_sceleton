@@ -17,15 +17,15 @@ public class LoginPage extends BasePage {
 
     //username field
     @FindBy(xpath = ".//*[@name='login' and @placeholder='Username']")
-    public WebElement username_field;
+    private WebElement username_field;
 
     //password field
     @FindBy(xpath = ".//*[@name='password' and @placeholder='Password']")
-    public WebElement password_field;
+    private WebElement password_field;
 
     //Signin button
     @FindBy(xpath = ".//*[@type='submit']")
-    public WebElement sign_in_button;
+    private WebElement sign_in_button;
 
 
     //Login Page Methods

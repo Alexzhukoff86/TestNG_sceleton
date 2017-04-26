@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
  */
 public class MainPage extends BasePage {
 
-    public MainPage(WebDriver webDriver) {
+    MainPage(WebDriver webDriver) {
         super(webDriver);
     }
 
@@ -17,7 +17,7 @@ public class MainPage extends BasePage {
 
     //Sign in button
     @FindBy(xpath = ".//*[@href='/antarcticle/signin']")
-    public WebElement SignIn_button;
+    private WebElement SignIn_button;
 
 
 
