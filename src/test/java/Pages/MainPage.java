@@ -19,6 +19,8 @@ public class MainPage extends BasePage {
     @FindBy(xpath = ".//*[@href='/antarcticle/signin']")
     private WebElement SignIn_button;
 
+    @FindBy(xpath = ".//*[@href='/antarcticle/signup']")
+    private WebElement SignUp_button;
 
 
     //Main Page methods
@@ -29,6 +31,10 @@ public class MainPage extends BasePage {
         return new LoginPage(webDriver);
     }
 
+    public RegisterAccountPage clickSignUpButton() {
+        SignUp_button.click();
+        return new RegisterAccountPage(webDriver);
+    }
 
 //end of class
 }

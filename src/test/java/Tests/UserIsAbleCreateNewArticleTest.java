@@ -31,7 +31,6 @@ public class UserIsAbleCreateNewArticleTest extends BaseTest {
     }
 
 
-
     @BeforeClass
     public void setUp() throws Exception {
         loginSteps = new LoginSteps();
