@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests.TestsGroup" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-28T09:18:26" hostname="zhukov" time="6.811">
+  <properties/>
+  <testcase name="testLogin" classname="Tests.TestsGroup" time="4.188"/>
+  <testcase name="testUserIsAbleCreateNewArticle" classname="Tests.TestsGroup" time="2.158"/>
+  <testcase name="testUserIsAbleToDoSearchByTag" classname="Tests.TestsGroup" time="0.461"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

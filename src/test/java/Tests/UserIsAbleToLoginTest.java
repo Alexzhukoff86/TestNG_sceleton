@@ -12,7 +12,7 @@ import org.testng.annotations.*;
 public class UserIsAbleToLoginTest extends BaseTest {
     public LoginSteps loginSteps;
 
-    @BeforeClass
+    @BeforeMethod
     public void setUp() throws Exception {
         initialPage = new InitialPage(webDriver);
         loginSteps = new LoginSteps();
@@ -25,7 +25,7 @@ public class UserIsAbleToLoginTest extends BaseTest {
         Assert.assertEquals(loginSteps.getUserNameForAssert(), "alex.testQA", "Error - user name is wrong");
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() throws Exception {
         loginSteps.logoutFromSiteStep();
         System.out.println("Error");

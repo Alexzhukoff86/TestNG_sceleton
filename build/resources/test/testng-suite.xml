@@ -8,7 +8,8 @@
             <!--class name="Test.IUaTest" /-->
             <!--class name="Test.LogoutTest"/-->
             <!--class name="Tests.UserIsAbleToLoginTest"/-->
-            <class name="Tests.UserIsAbleCreateNewArticleTest"/>
+            <!--class name="Tests.UserIsAbleCreateNewArticleTest"/-->
+            <class name="Tests.TestsGroup"/>
         </classes>
     </test>
 

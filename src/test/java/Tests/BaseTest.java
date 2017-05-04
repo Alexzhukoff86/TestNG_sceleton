@@ -16,7 +16,7 @@ public class BaseTest {
     InitialPage initialPage;
 
     @BeforeSuite
-    public void setBeforeSuite() throws Exception {
+    public void webDriverInitialization() throws Exception {
         webDriver = DriverFactory.getDriver();
         webDriver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
     }

@@ -6,7 +6,7 @@ import Steps.CreateNewArticleSteps;
 import Steps.LoginSteps;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -31,7 +31,7 @@ public class UserIsAbleCreateNewArticleTest extends BaseTest {
     }
 
 
-    @BeforeClass
+    @BeforeMethod
     public void setUp() throws Exception {
         loginSteps = new LoginSteps();
         loginSteps.loginToSite(new InitialPage(webDriver));

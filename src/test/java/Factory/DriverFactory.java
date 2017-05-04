@@ -11,7 +11,6 @@ import org.openqa.selenium.opera.OperaDriver;
  * Created by zhukov on 4/18/2017.
  */
 public class DriverFactory {
-
     public static WebDriver getDriver() {
         WebDriver driver = null;
         String driverName = System.getProperty("driver");
@@ -41,7 +40,6 @@ public class DriverFactory {
                 driver = new OperaDriver();
                 break;
         }
-
         return driver;
     }
 }

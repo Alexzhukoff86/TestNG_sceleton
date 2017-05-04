@@ -28,6 +28,7 @@ public class LoginPage extends BasePage {
     private WebElement sign_in_button;
 
 
+
     //Login Page Methods
 
     //Filed out all fields on Login page with testing credentials
