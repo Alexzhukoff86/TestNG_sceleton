@@ -10,14 +10,13 @@ import org.testng.annotations.*;
  * Created by zhukov on 4/18/2017.
  */
 public class UserIsAbleToLoginTest extends BaseTest {
-    public LoginSteps loginSteps;
+    private LoginSteps loginSteps;
 
     @BeforeMethod
     public void setUp() throws Exception {
         initialPage = new InitialPage(webDriver);
         loginSteps = new LoginSteps();
     }
-
 
     @Test(description = "Test for login")
     public void testLogin() throws Exception {

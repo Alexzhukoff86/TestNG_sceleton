@@ -42,7 +42,7 @@ public class TestsGroup extends BaseTest {
         Assert.assertEquals(loginSteps.getUserNameForAssert(), loginSteps.getUSERNAME(), "Error - user name is wrong");
     }
 
-    @Test(description = "User is able to create new article",dependsOnMethods = {"testLogin"})
+    @Test(description = "User is able to create new article",dependsOnMethods = {"testUserIsAbleToLogin"})
     public void testUserIsAbleCreateNewArticle() throws Exception {
         createNewArticleSteps.createNewArticle(new LoggedMainPage(webDriver), article_fields);
         HashMap<String, String> testMap = createNewArticleSteps.get_test_map_forAssert();
