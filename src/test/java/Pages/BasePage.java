@@ -10,10 +10,12 @@ import org.testng.reporters.jq.Main;
 public abstract class BasePage {
     WebDriver webDriver;
 
-    BasePage(WebDriver webDriver) {
+    public BasePage(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
     }
 
-
+    public BasePage() {
+        //
+    }
 }
