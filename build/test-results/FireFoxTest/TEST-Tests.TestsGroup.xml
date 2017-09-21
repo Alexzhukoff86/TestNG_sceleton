@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests.TestsGroup" tests="4" skipped="3" failures="1" errors="0" timestamp="2017-09-07T15:47:36" hostname="zhukov" time="0.308">
+<testsuite name="Tests.TestsGroup" tests="4" skipped="3" failures="1" errors="0" timestamp="2017-09-20T09:03:33" hostname="zhukov" time="0.323">
   <properties/>
-  <testcase name="webDriverInitialization" classname="Tests.TestsGroup" time="0.196">
-    <failure message="java.lang.IllegalStateException: The driver executable does not exist: E:\GIT\testNG_fuckingTest\drivers\geckodriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: E:\GIT\testNG_fuckingTest\drivers\geckodriver.exe
+  <testcase name="webDriverInitialization" classname="Tests.TestsGroup" time="0.279">
+    <failure message="java.lang.IllegalStateException: The driver executable does not exist: E:\ЛПР\JTalks_automation\JTalks.test\drivers\geckodriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: E:\ЛПР\JTalks_automation\JTalks.test\drivers\geckodriver.exe
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
 	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
@@ -12,7 +12,7 @@
 	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
 	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
 	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
-	at Factory.DriverFactory.getDriver(DriverFactory.java:25)
+	at Factory.DriverFactory.getDriver(DriverFactory.java:26)
 	at Tests.BaseTest.webDriverInitialization(BaseTest.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -41,7 +41,7 @@
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at com.sun.proxy.$Proxy3.stop(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -57,7 +57,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testUserIsAbleToLogin" classname="Tests.TestsGroup" time="0.003">
+  <testcase name="testUserIsAbleToLogin" classname="Tests.TestsGroup" time="0.001">
     <skipped/>
   </testcase>
   <testcase name="testUserIsAbleCreateNewArticle" classname="Tests.TestsGroup" time="0.0">

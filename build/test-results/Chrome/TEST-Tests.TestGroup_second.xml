@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests.TestGroup_second" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-09-21T09:17:49" hostname="zhukov" time="3.901">
+  <properties/>
+  <testcase name="validUserIsAbleToLogin" classname="Tests.TestGroup_second" time="3.901"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

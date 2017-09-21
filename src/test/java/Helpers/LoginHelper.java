@@ -1,11 +1,16 @@
 package Helpers;
 
 import Pages.LoginPage;
-import org.openqa.selenium.WebDriver;
+import Users.UserFactory;
 
 public class LoginHelper extends LoginPage {
 
-    public LoginHelper(WebDriver webDriver) {
-        super(webDriver);
+    public LoginHelper() {
     }
+
+    public void loginValidUser(){
+        login_to_site(UserFactory.getValidUser().getLogin(),UserFactory.getValidUser().getPassword());
+    }
+
+
 }

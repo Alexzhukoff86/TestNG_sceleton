@@ -13,8 +13,9 @@ import java.util.List;
  * Created by zhukov on 4/19/2017.
  */
 public class LoggedMainPage extends BasePage {
-    public LoggedMainPage(WebDriver webDriver) {
-        super(webDriver);
+
+
+    public LoggedMainPage() {
     }
 
     //Main Page when user is logged in
@@ -38,12 +39,12 @@ public class LoggedMainPage extends BasePage {
     public MainPage logoutFromSite() {
         dropdown_menu_user.click();
         sign_out_button.click();
-        return new MainPage(webDriver);
+        return new MainPage();
     }
 
     public NewArticlePage clickCreateButtonClick() {
         create_article_button.click();
-        return new NewArticlePage(webDriver);
+        return new NewArticlePage();
     }
 
     public List<WebElement> getTagsListForAssert() {

@@ -8,8 +8,12 @@ import org.openqa.selenium.support.FindBy;
  * Created by zhukov on 4/25/2017.
  */
 public class ArticlePage extends BasePage {
-    public ArticlePage(WebDriver webDriver) {
+
+/*    public ArticlePage(WebDriver webDriver) {
         super(webDriver);
+    }*/
+
+    public ArticlePage() {
     }
 
     //Page WebElements

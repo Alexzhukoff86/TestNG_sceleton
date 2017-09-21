@@ -1,14 +1,20 @@
 package Helpers;
 
 import Pages.BasePage;
-import org.openqa.selenium.WebDriver;
+import Sites.SiteFactory;
+
 
 public class CommonHelper extends BasePage {
 
-    public CommonHelper(WebDriver webDriver) {
-        super(webDriver);
-    }
-
     public CommonHelper() {
     }
+
+    public void openWebSite() {
+        webDriver.get(SiteFactory.getSite().siteUrl);
+    }
+
+    public void closeWebBrowser() {
+        webDriver.quit();
+    }
+
 }

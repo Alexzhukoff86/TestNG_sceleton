@@ -30,7 +30,7 @@ public class TestsGroup extends BaseTest {
 
     @BeforeClass
     public void setUp() throws Exception {
-        initialPage = new InitialPage(webDriver);
+        initialPage = new InitialPage();
         loginSteps = new LoginSteps();
         createNewArticleSteps = new CreateNewArticleSteps();
         article_fields = createPositiveMapForFields();
@@ -44,7 +44,7 @@ public class TestsGroup extends BaseTest {
 
     @Test(description = "User is able to create new article",dependsOnMethods = {"testUserIsAbleToLogin"})
     public void testUserIsAbleCreateNewArticle() throws Exception {
-        createNewArticleSteps.createNewArticle(new LoggedMainPage(webDriver), article_fields);
+        createNewArticleSteps.createNewArticle(new LoggedMainPage(), article_fields);
         HashMap<String, String> testMap = createNewArticleSteps.get_test_map_forAssert();
         Assert.assertEquals(testMap, article_fields,"Wrong results");
     }

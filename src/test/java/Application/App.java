@@ -1,10 +1,16 @@
 package Application;
 
 import Helpers.CommonHelper;
-import org.openqa.selenium.WebDriver;
+import Helpers.LoginHelper;
+import Helpers.MainHelper;
+
+
 
 public class App {
-    public App() {
-        CommonHelper common = new CommonHelper();
-    }
+
+    public CommonHelper common = new CommonHelper();
+    public MainHelper mainHelper = new MainHelper();
+    public LoginHelper loginHelper = new LoginHelper();
+
+
 }

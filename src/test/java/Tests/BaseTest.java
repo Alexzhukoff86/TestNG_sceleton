@@ -1,5 +1,6 @@
 package Tests;
 
+import Application.App;
 import Factory.DriverFactory;
 import Pages.*;
 import org.openqa.selenium.WebDriver;
@@ -14,16 +15,21 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
     public WebDriver webDriver;
     InitialPage initialPage;
+    App app;
 
     @BeforeSuite
     public void webDriverInitialization() throws Exception {
-        webDriver = DriverFactory.getDriver();
-        webDriver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+       // webDriver = DriverFactory.getDriver();
+        //webDriver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+        app = new App();
+
     }
 
 
     @AfterSuite
     public void closeWebBrowser() throws Exception {
-        webDriver.quit();
+        //webDriver.quit();
+        //BasePage.closeDriver();
+        app.common.closeWebBrowser();
     }
 }

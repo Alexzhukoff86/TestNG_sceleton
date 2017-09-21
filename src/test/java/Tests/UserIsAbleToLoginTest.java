@@ -14,7 +14,7 @@ public class UserIsAbleToLoginTest extends BaseTest {
 
     @BeforeMethod
     public void setUp() throws Exception {
-        initialPage = new InitialPage(webDriver);
+        initialPage = new InitialPage();
         loginSteps = new LoginSteps();
     }
 
