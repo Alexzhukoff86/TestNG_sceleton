@@ -1,10 +1,8 @@
 package Tests;
 
+import Application.App;
 import Factory.DriverFactory;
-import Pages.BasePage;
-import Pages.LoggedMainPage;
-import Pages.LoginPage;
-import Pages.MainPage;
+import Pages.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -16,17 +14,22 @@ import java.util.concurrent.TimeUnit;
  */
 public class BaseTest {
     public WebDriver webDriver;
-    public BasePage basePage;
+    InitialPage initialPage;
+    App app;
 
     @BeforeSuite
-    public void setBeforeSuite() throws Exception {
-        webDriver = DriverFactory.getDriver();
-        webDriver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+    public void webDriverInitialization() throws Exception {
+       // webDriver = DriverFactory.getDriver();
+        //webDriver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+        app = new App();
+
     }
 
 
     @AfterSuite
     public void closeWebBrowser() throws Exception {
-        webDriver.quit();
+        //webDriver.quit();
+        //BasePage.closeDriver();
+        app.common.closeWebBrowser();
     }
 }

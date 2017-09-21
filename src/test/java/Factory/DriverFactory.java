@@ -41,7 +41,6 @@ public class DriverFactory {
                 driver = new OperaDriver();
                 break;
         }
-
         return driver;
     }
 }
