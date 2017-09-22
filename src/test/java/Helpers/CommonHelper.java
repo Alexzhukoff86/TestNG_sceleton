@@ -1,7 +1,7 @@
 package Helpers;
 
 import Pages.BasePage;
-import Sites.SiteFactory;
+import Factories.SiteFactory;
 
 
 public class CommonHelper extends BasePage {

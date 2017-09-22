@@ -1,4 +1,4 @@
-package Articles;
+package Models;
 
 public class Article {
     private String title;

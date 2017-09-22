@@ -7,9 +7,7 @@
         <classes>
             <!--class name="Test.IUaTest" /-->
             <!--class name="Test.LogoutTest"/-->
-            <!--class name="Tests.UserIsAbleToLoginTest"/-->
-            <!--class name="Tests.UserIsAbleCreateNewArticleTest"/-->
-            <!--class name="Tests.TestsGroup"/-->
+             <!--class name="Tests.TestsGroup"/-->
             <class name = "Tests.TestGroup_second"/>
         </classes>
     </test>

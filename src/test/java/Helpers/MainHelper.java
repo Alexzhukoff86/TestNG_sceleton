@@ -22,4 +22,9 @@ public class MainHelper extends MainPage {
     public void openCreateNewArticlePage(){
         clickCreateButtonClick();
     }
+
+    public String getTitle(){
+        return webDriver.getTitle();
+    }
+
 }

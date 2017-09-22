@@ -1,7 +1,7 @@
 package Helpers;
 
 import Pages.LoginPage;
-import Users.UserFactory;
+import Factories.UserFactory;
 
 public class LoginHelper extends LoginPage {
 

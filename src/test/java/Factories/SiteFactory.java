@@ -1,4 +1,6 @@
-package Sites;
+package Factories;
+
+import Models.Site;
 
 import java.util.ResourceBundle;
 

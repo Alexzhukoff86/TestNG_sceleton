@@ -1,4 +1,6 @@
-package Users;
+package Factories;
+
+import Models.User;
 
 import java.util.ResourceBundle;
 

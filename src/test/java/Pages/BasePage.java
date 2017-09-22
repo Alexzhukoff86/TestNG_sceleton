@@ -1,6 +1,6 @@
 package Pages;
 
-import Factory.DriverFactory;
+import Factories.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
