@@ -6,12 +6,6 @@ public class Article {
     private String tag;
     private String author;
 
-/*    public Article(String title, String content, String tag, String author) {
-        this.title = title;
-        this.content = content;
-        this.tag = tag;
-        this.author = author;
-    }*/
 
     public String getTitle() {
         return title;

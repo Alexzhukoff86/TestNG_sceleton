@@ -16,7 +16,6 @@ public class BaseTest {
     @BeforeSuite
     public void webDriverInitialization() throws Exception {
         app = new App();
-
     }
 
 
