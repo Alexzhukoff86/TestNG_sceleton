@@ -9,8 +9,11 @@ import org.openqa.selenium.support.FindBy;
  */
 public class LoginPage extends BasePage {
 
-    public LoginPage(WebDriver webDriver) {
+/*    public LoginPage(WebDriver webDriver) {
         super(webDriver);
+    }*/
+
+    public LoginPage() {
     }
 
     //Login Page Elements
@@ -28,6 +31,7 @@ public class LoginPage extends BasePage {
     private WebElement sign_in_button;
 
 
+
     //Login Page Methods
 
     //Filed out all fields on Login page with testing credentials
@@ -35,7 +39,7 @@ public class LoginPage extends BasePage {
         username_field.sendKeys(username);
         password_field.sendKeys(password);
         sign_in_button.click();
-        return new LoggedMainPage(webDriver);
+        return new LoggedMainPage();
     }
 
 

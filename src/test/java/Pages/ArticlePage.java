@@ -1,15 +1,22 @@
 package Pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.security.Key;
 
 /**
  * Created by zhukov on 4/25/2017.
  */
 public class ArticlePage extends BasePage {
-    public ArticlePage(WebDriver webDriver) {
+
+/*    public ArticlePage(WebDriver webDriver) {
         super(webDriver);
+    }*/
+
+    public ArticlePage() {
     }
 
     //Page WebElements
@@ -34,6 +41,12 @@ public class ArticlePage extends BasePage {
     @FindBy(xpath = ".//*[@class='year']")
     private WebElement article_date_yaer;
 
+    @FindBy(xpath = ".//*[@class='btn btn-sm btn-danger delete-link article-toolbar']")
+    private WebElement delete_button;
+
+    @FindBy(xpath = ".//*[@class='btn btn-primary']")
+    private WebElement ok_button;
+
 
     //Page Methods
     public String get_ArticleTitle() {
@@ -48,8 +61,16 @@ public class ArticlePage extends BasePage {
         return article_content.getText();
     }
 
-    public String get_ArticleTag(){
+    public String get_ArticleTag() {
         return article_tag.getText();
+    }
+
+    public void delete_Article() {
+        delete_button.click();
+    }
+
+    public void clickOkButton() {
+        ok_button.sendKeys(Keys.ENTER);
     }
 
 }

@@ -10,8 +10,11 @@ import org.openqa.selenium.support.FindBy;
  */
 public class NewArticlePage extends BasePage {
 
-    NewArticlePage(WebDriver webDriver) {
+/*    NewArticlePage(WebDriver webDriver) {
         super(webDriver);
+    }*/
+
+    public NewArticlePage() {
     }
 
     @FindBy(xpath = ".//*[@type='text' and @name='title']")
@@ -45,7 +48,7 @@ public class NewArticlePage extends BasePage {
 
     public ArticlePage click_create_article_button(){
         create_article_button.click();
-        return new ArticlePage(webDriver);
+        return new ArticlePage();
     }
 
 }
